@@ -1,0 +1,103 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.gamer'
+    compileSdk 34
+    dataBinding {
+        enabled = true
+
+    defaultConfig {
+        applicationId "com.example.gamer"
+        minSdk 26
+        targetSdk 33
+        versionCode 3
+        versionName "3.0"
+        ndk{
+            abiFilters 'x86', 'x86_64' ,'armeabi-v7a', 'arm64-v8a'
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+        splits{
+            abi{
+                enable true
+                reset()
+                include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+                universalApk true
+            }
+        }
+        packagingOptions{
+            exclude 'META-INF/DEPENDENCIES'
+            jniLibs{
+                useLegacyPackaging true
+            }
+        }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+
+    implementation 'com.google.android.material:material:1.12.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'org.jsoup:jsoup:1.16.1'
+
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.0"
+
+    implementation 'com.github.yausername.youtubedl-android:library:0.15.0'
+    implementation 'com.github.yausername.youtubedl-android:ffmpeg:0.15.0'
+
+    implementation 'org.eclipse.jetty:jetty-server:9.4.43.v20210629'
+
+    implementation 'com.liulishuo.filedownloader:library:1.7.7'
+    
+    implementation "com.squareup.okhttp3:okhttp:4.11.0"
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+    sourceSets {
+        main {
+            java {
+                srcDirs 'src\\main\\java', 'src\\main\\java\\2'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_16
+        targetCompatibility JavaVersion.VERSION_16
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+}

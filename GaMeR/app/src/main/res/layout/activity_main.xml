@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:id="@+id/rel"
+                android:src="@drawable/gamer">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear1"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rel"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/ytm"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/yimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/yticon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/yimg"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="YouTube Downloader"
+                        android:textColor="@color/white"
+                        app:autoSizeMaxTextSize="23dp"
+                        app:autoSizeMinTextSize="15dp"
+                        app:autoSizeTextType="uniform" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear2"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear1"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/Yog"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/yoimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/baseline_movie_filter_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/yoimg"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Tamil Movies"
+                        android:textColor="@color/white"
+                        app:autoSizeMaxTextSize="23dp"
+                        app:autoSizeMinTextSize="15dp"
+                        app:autoSizeTextType="uniform" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear3"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear2"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rockersmain"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/tmimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/baseline_downloading_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tmimg"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="File Downloader"
+                        android:textColor="@color/white"
+                        app:autoSizeMaxTextSize="23dp"
+                        app:autoSizeMinTextSize="15dp"
+                        app:autoSizeTextType="uniform" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear4"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear3"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/aboutmain"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/allimg"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/baseline_bolt_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/allimg"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="All Video Downloader"
+                        android:textColor="@color/white"
+                        app:autoSizeMaxTextSize="23dp"
+                        app:autoSizeMinTextSize="15dp"
+                        app:autoSizeTextType="uniform" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear5"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear4"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/ftp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/allimg2"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ftp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/allimg2"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="GaMeR SHARE"
+                        android:textColor="@color/white"
+                        app:autoSizeMaxTextSize="23dp"
+                        app:autoSizeMinTextSize="15dp"
+                        app:autoSizeTextType="uniform" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear6"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear5"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/calender"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/allimg3"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/baseline_edit_calendar_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/allimg3"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Calender App"
+                        android:textColor="@color/white"
+                        app:autoSizeMaxTextSize="23dp"
+                        app:autoSizeMinTextSize="15dp"
+                        app:autoSizeTextType="uniform" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+</layout>
+
+
+
+

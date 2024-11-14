@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GaMeR" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.GaMeR" parent="Base.Theme.GaMeR" />
+
+    <style name="Theme.GaMeR.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GaMeR.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GaMeR.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="customtab" parent="TextAppearance.Design.CollapsingToolbar.Expanded" />
+</resources>
